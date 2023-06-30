@@ -1,0 +1,221 @@
+@font-face {
+    font-family: "mr_arounder_arounder";
+    src: url("/fonts/mr_arounder_arounder.otf") format("opentype");
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.burger-menu {
+    width: 60px;
+    height: 15px;
+    position: relative;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.burger-menu-line.active {
+    color: white;
+}
+
+.burger-menu-line {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+
+.burger-menu-line-1 {
+    top: 0;
+}
+
+.burger-menu-line-2 {
+    top: 50%;
+    transform: translateY(-45%);
+}
+
+.burger-menu-line-3 {
+    bottom: 0;
+}
+
+.burger-menu.active .burger-menu-line-1 {
+    top: 30%;
+    background: #ffffff;
+    transform: matrix(0.96, -0.29, 0.23, 0.97, 0, 0);
+}
+
+.burger-menu.active .burger-menu-line-2 {
+    opacity: 0;
+}
+
+.burger-menu.active .burger-menu-line-3 {
+    top: 30%;
+
+    background: #ffffff;
+    transform: matrix(0.96, 0.29, 0.23, 0.97, 0, 0);
+}
+
+.reverse-animation {
+    transition: transform 0.6s ease, background-color 0.5s ease;
+    background-color: #fff;
+}
+
+.main-menu {
+    width: 100%;
+    background: url("/img/Gradient.png") center center;
+    background-color: #000;
+    position: absolute;
+    top: -100%;
+    /* Начальное положение за экраном */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    transition: top 1.3s ease, opacity 0.3s;
+    /* Плавное появление/исчезание */
+    z-index: 998;
+    /* Установка z-index для основного меню */
+}
+
+nav {
+    width: 90%;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    width: 100%;
+}
+
+.animated-hr {
+    width: 50%;
+    border: none;
+    height: 1px;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    transition: width 2.2s;
+}
+
+.main-menu-a {
+    color: white;
+    text-decoration: none;
+}
+
+.animated-hr.active {
+    width: 100%;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.main-menu-a {
+    color: white;
+    text-decoration: none;
+}
+
+.div-info {
+    text-align: center;
+}
+
+.menu {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid;
+
+}
+
+h1 {
+    font-family: 'mr_arounder_arounder', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150px;
+    font-size: 16.90vw;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+    text-align: center;
+}
+
+.add-block {
+    margin-bottom: 10px;
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+input {
+    height: 50px;
+}
+
+.add-block {
+    margin-bottom: 20px;
+}
+
+.exit {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+form {
+    display: grid;
+}
+
+button {
+    width: 150px;
+    padding: 5px 10px;
+    background-color: white;
+    font-size: 25px;
+    font-weight: 100;
+    text-transform: lowercase;
+    color: black;
+    border: none;
+    margin: 0px auto;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+.portfolio-title {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38px;
+}

@@ -1,0 +1,231 @@
+@font-face {
+  font-family: "mr_arounder_arounder";
+  src: url("/fonts/mr_arounder_arounder.otf") format("opentype");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  width: 90%;
+  height: 740px;
+  margin: 0px auto;
+}
+
+.container-main {
+  width: 90%;
+  margin: 0px auto;
+}
+
+.menu {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hr-menu {
+  width: 100%;
+  margin: 0px auto;
+  color: black;
+}
+
+.burger-menu {
+  width: 60px;
+  height: 15px;
+  position: relative;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.burger-menu-line.active {
+  color: white;
+}
+
+.burger-menu-line {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  transition: transform 0.3s ease;
+}
+
+.burger-menu-line-1 {
+  top: 0;
+}
+
+.burger-menu-line-2 {
+  top: 50%;
+  transform: translateY(-45%);
+}
+
+.burger-menu-line-3 {
+  bottom: 0;
+}
+
+.burger-menu.active .burger-menu-line-1 {
+  top: 30%;
+  background: #ffffff;
+  transform: matrix(0.96, -0.29, 0.23, 0.97, 0, 0);
+}
+
+.burger-menu.active .burger-menu-line-2 {
+  opacity: 0;
+}
+
+.burger-menu.active .burger-menu-line-3 {
+  top: 30%;
+
+  background: #ffffff;
+  transform: matrix(0.96, 0.29, 0.23, 0.97, 0, 0);
+}
+
+.reverse-animation {
+  transition: transform 0.6s ease, background-color 0.5s ease;
+  background-color: #fff;
+}
+
+.main-menu {
+  width: 100%;
+  background: url("/img/Gradient.png") center center;
+  background-color: #000;
+  position: absolute;
+  top: -100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  transition: top 1.3s ease, opacity 0.3s;
+  z-index: 998;
+}
+
+nav {
+  width: 90%;
+  height: 700px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  width: 100%;
+}
+
+.animated-hr {
+  width: 50%;
+  border: none;
+  height: 1px;
+  background-color: white;
+  margin-top: 5px;
+  margin-bottom: 60px;
+  transition: width 2.2s;
+}
+
+.animated-hr.active {
+  width: 100%;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+      font-family: "Montserrat", sans-serif;
+
+}
+
+.main-menu-a {
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "mr_arounder_arounder", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150px;
+  font-size: 15.4vw;
+    text-align: center;
+}
+
+.div-header-section {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.header-block-1 {
+  width: 370px;
+  height: 50vh;
+  font-size: 22px;
+  text-align: justify;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+.div-header-section {
+  width: 100%;
+  height: 900px;
+  margin-top: 20px;
+}
+
+.div-header-block {
+  width: 180px;
+  text-align: justify;
+  float: right;
+  margin-top: 8%;
+  margin-right: 30%;
+    font-size: 20px;
+  text-transform: lowercase;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+
+h2 {
+  font-family: "mr_arounder_arounder";
+  font-weight: 100;
+  font-size: 60px;
+}
+
+/* CSS код, который был предоставлен ранее */
+
+.fade-in {
+  opacity: 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.5s ease-in-out, transform 1s ease-in-out;
+  
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+  
+}
+
+.div-header-section {
+  width: 100%;
+  height: 900px;
+  margin-top: 20px;
+}
+
+.div-header-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+  margin: 175px auto;
+}
+
+.header-yslygi {
+  width: 400px;
+  height: 400px;
+  background-color: black;
+  margin-bottom: 50px;
+}
